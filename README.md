@@ -41,4 +41,5 @@ Sub Timings Beautifier was developed using Visual Studio 2017 Community Edition 
 
 ## License
 Licensed under GPL v3.
+
 Contains code portions from Subtitle Edit by nikse, licensed under GPL v3.
