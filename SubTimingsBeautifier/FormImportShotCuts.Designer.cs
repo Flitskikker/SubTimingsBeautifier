@@ -35,6 +35,8 @@
             this.groupBoxTimeCodes = new System.Windows.Forms.GroupBox();
             this.radioButtonSeconds = new System.Windows.Forms.RadioButton();
             this.radioButtonMilliseconds = new System.Windows.Forms.RadioButton();
+            this.buttonOpenFile = new System.Windows.Forms.Button();
+            this.openFileDialog = new System.Windows.Forms.OpenFileDialog();
             this.groupBoxTimeCodes.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,11 +45,11 @@
             this.textBoxTimecodes.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBoxTimecodes.Location = new System.Drawing.Point(15, 27);
+            this.textBoxTimecodes.Location = new System.Drawing.Point(15, 37);
             this.textBoxTimecodes.Multiline = true;
             this.textBoxTimecodes.Name = "textBoxTimecodes";
             this.textBoxTimecodes.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBoxTimecodes.Size = new System.Drawing.Size(430, 272);
+            this.textBoxTimecodes.Size = new System.Drawing.Size(430, 262);
             this.textBoxTimecodes.TabIndex = 0;
             // 
             // buttonCancel
@@ -75,11 +77,11 @@
             // labelInstruction
             // 
             this.labelInstruction.AutoSize = true;
-            this.labelInstruction.Location = new System.Drawing.Point(12, 9);
+            this.labelInstruction.Location = new System.Drawing.Point(12, 12);
             this.labelInstruction.Name = "labelInstruction";
-            this.labelInstruction.Size = new System.Drawing.Size(245, 15);
+            this.labelInstruction.Size = new System.Drawing.Size(259, 15);
             this.labelInstruction.TabIndex = 3;
-            this.labelInstruction.Text = "Paste shot cuts below, one timecode per line.";
+            this.labelInstruction.Text = "Paste shot cuts below, one timecode per line, or";
             // 
             // groupBoxTimeCodes
             // 
@@ -116,12 +118,27 @@
             this.radioButtonMilliseconds.Text = "Milliseconds";
             this.radioButtonMilliseconds.UseVisualStyleBackColor = true;
             // 
+            // buttonOpenFile
+            // 
+            this.buttonOpenFile.Location = new System.Drawing.Point(277, 8);
+            this.buttonOpenFile.Name = "buttonOpenFile";
+            this.buttonOpenFile.Size = new System.Drawing.Size(98, 23);
+            this.buttonOpenFile.TabIndex = 17;
+            this.buttonOpenFile.Text = "Open file...";
+            this.buttonOpenFile.UseVisualStyleBackColor = true;
+            this.buttonOpenFile.Click += new System.EventHandler(this.buttonOpenFile_Click);
+            // 
+            // openFileDialog
+            // 
+            this.openFileDialog.FileName = "*.txt;*.scenechanges;*.xml";
+            // 
             // FormImportShotCuts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.buttonCancel;
             this.ClientSize = new System.Drawing.Size(457, 403);
+            this.Controls.Add(this.buttonOpenFile);
             this.Controls.Add(this.groupBoxTimeCodes);
             this.Controls.Add(this.labelInstruction);
             this.Controls.Add(this.buttonOK);
@@ -148,5 +165,7 @@
         private System.Windows.Forms.GroupBox groupBoxTimeCodes;
         public System.Windows.Forms.RadioButton radioButtonSeconds;
         public System.Windows.Forms.RadioButton radioButtonMilliseconds;
+        private System.Windows.Forms.Button buttonOpenFile;
+        private System.Windows.Forms.OpenFileDialog openFileDialog;
     }
 }
