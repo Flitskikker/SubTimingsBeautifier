@@ -17,7 +17,7 @@ I realize this tool is quite niche, but I really like the resulting subtitles. I
 ![Example](https://i.imgur.com/ozZuWDv.png)
 
 ## Downloading and installing
-The latest version of Sub Timings Beautifier, **1.2.5.0 (dd February 27, 2019)**, can be downloaded from the "Releases" tab: https://github.com/Flitskikker/SubTimingsBeautifier/releases
+The latest version of Sub Timings Beautifier, **1.2.6.0 (dd February 28, 2019)**, can be downloaded from the "Releases" tab: https://github.com/Flitskikker/SubTimingsBeautifier/releases
 
 Installation is not required. You do, however, need to place the **FFmpeg** and **FFprobe** binaries in the same directory as SubTimingsBeautifier.exe, as Sub Timings Beautifier uses it for extracting timecodes and detecting shot cuts.
 You can download these from here: https://ffmpeg.zeranoe.com/builds/
