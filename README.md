@@ -1,3 +1,5 @@
+## As of September 2023, Sub Timings Beautifier has been integrated into [Subtitle Edit](https://github.com/SubtitleEdit/subtitleedit) (version 4.0.0). It has been rewritten from scratch, and is even more configurable than before. You can now easily follow Netflix' timing guidelines, for example. See [this page](https://github.com/SubtitleEdit/subtitleedit/pull/7105) for an overview.
+
 # Sub Timings Beautifier
 
 This tool automatically aligns the timings (or "cues") of subtitles in subtitle files (e.g. SubRip/.srt) to the exact frame times. It also automatically snaps cues to nearby shot cuts (or "scene changes") for a spot-on sync, and makes the gaps (or "intervals") between subtitles consistent, resulting in a more uniform rhythm in the "flashing" of subtitles. This will sophisticate the overall subtitle and provide a better viewing experience.
